@@ -255,7 +255,7 @@ pub struct Placeholder<T> {
     pub bound: T,
 }
 
-#[derive(Clone, Copy, PartialEq, Eq, Serialize)]
+#[derive(Clone, Copy, PartialEq, Eq, Hash, Serialize)]
 pub struct Span(usize);
 
 impl Debug for Span {
